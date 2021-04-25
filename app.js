@@ -8,7 +8,7 @@ const User = require('./models/User');
 const bcrypt = require('bcrypt');
 const Todo = require('./models/Todo');
 
-mongoose.connect('your url here');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://admin:password1234@cluster0.5s4i7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 app.use(cors());
 app.use((bodyParser.json()));
@@ -163,7 +163,9 @@ app.put('/todo/:todoId', (req, res) => {
 
 const port = process.env.PORT || 5000;
 
-
+if (process.env.NODE_ENV === 'production'){
+    app.use(express.static('client/build'));
+}
 
 app.listen(port, (err) => {
   if (err) return console.log(err);

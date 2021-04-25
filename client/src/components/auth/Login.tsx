@@ -28,7 +28,7 @@ const Login = ({renderSignup}: LoginProps) => {
 
   return(
     <div style={{height: '300px'}}>
-      <h1 className="text-center text-green-400 font-bold">login</h1>
+      <h1 className="text-center text-indigo-500 font-bold">login</h1>
       <div className="mb-4">
         <label>username</label>
         <input onChange={(e) => setUsername(e.target.value)} className="w-full px-3 py-2 border border-gray-400 rounded-md" type="text" placeholder="username" />
@@ -39,9 +39,9 @@ const Login = ({renderSignup}: LoginProps) => {
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <p>No account? <span className="text-green-400 cursor-pointer" onClick={renderSignup}>Signup</span></p>
+          <p>No account? <span className="text-indigo-500 cursor-pointer" onClick={renderSignup}>Signup</span></p>
         </div>
-        <button className="rounded-lg px-6 py-3 font-bold bg-green-400 text-white" onClick={() => onSubmit()}>Login</button>
+        <button className="rounded-lg px-6 py-3 font-bold bg-indigo-500 text-white" onClick={() => onSubmit()}>Login</button>
       </div>
     </div>
   )

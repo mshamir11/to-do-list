@@ -12,7 +12,7 @@ const Landing = () => {
           {isSignup && <Signup renderLogin={() => setIsSignup(false)} /> || <Login renderSignup={() => setIsSignup(true)} />}
         </div>
       </div>
-      <div className="w-1/2 bg-green-400" />
+      <div className="w-1/2 bg-indigo-500" />
     </div>
   )
 }

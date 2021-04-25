@@ -27,7 +27,7 @@ const TodoList = ({todos, setTodos}: TodoListProps) => {
       {todos.filter(todo => !todo.isCompleted).map((todo) => (
         <div className="border border-gray-400 p-4 rounded-md mb-4 flex justify-between items-center" key={todo._id}>
           {todo.title}
-          <input type="button" className="py-2 px-3 bg-green-400 text-white rounded-md cursor-pointer" value="DONE" onClick={() => markCompleted(todo)} />
+          <input type="button" className="py-2 px-3 bg-indigo-500 text-white rounded-md cursor-pointer" value="DONE" onClick={() => markCompleted(todo)} />
         </div>
       ))}
     </>

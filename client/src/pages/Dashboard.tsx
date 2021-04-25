@@ -19,7 +19,7 @@ const Dashboard = () => {
     <>
       <Navbar />
       <div className="max-w-md mx-auto pt-12">
-        <h1 className="font-bold text-green-400 text-center text-xl mb-12">my todos dashboard</h1>
+        <h1 className="font-bold text-indigo-500 text-center text-xl mb-12">my todos dashboard</h1>
         <TodoForm todos={todoList} setTodos={setTodoList}/>
         <TodoList todos={todoList} setTodos={setTodoList} />
       </div>

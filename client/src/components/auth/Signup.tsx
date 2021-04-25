@@ -25,7 +25,7 @@ const Signup = ({renderLogin}: SignupProps) => {
 
   return(
     <div style={{height: '300px'}}>
-      <h1 className="text-center text-green-400 font-bold">signup</h1>
+      <h1 className="text-center text-indigo-500 font-bold">signup</h1>
       <div className="mb-4">
         <label>username</label>
         <input onChange={(e) => setUsername(e.target.value)} className="w-full px-3 py-2 border border-gray-400 rounded-md" type="text" placeholder="username" />
@@ -40,9 +40,9 @@ const Signup = ({renderLogin}: SignupProps) => {
       </div>
       <div className="flex justify-between items-center">
         <div>
-          <p>Already a member? <span className="text-green-400 cursor-pointer" onClick={renderLogin}>Login</span></p>
+          <p>Already a member? <span className="text-indigo-500 cursor-pointer" onClick={renderLogin}>Login</span></p>
         </div>
-        <button className={`rounded-lg px-6 py-3 font-bold text-white ${disabled ? "bg-gray-400" : "bg-green-400"}`} disabled={disabled} onClick={() => onSubmit()}>Signup</button>
+        <button className={`rounded-lg px-6 py-3 font-bold text-white ${disabled ? "bg-gray-400" : "bg-indigo-500"}`} disabled={disabled} onClick={() => onSubmit()}>Signup</button>
       </div>
     </div>
   )
